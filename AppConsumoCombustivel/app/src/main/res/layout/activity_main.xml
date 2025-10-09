@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FuelSaver - Consumo de Combustível"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblNomeVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do veículo:"
+        app:layout_constraintTop_toBottomOf="@id/titleApp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtNomeVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/lblNomeVeiculo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblNumeroPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número da placa:"
+        app:layout_constraintTop_toBottomOf="@id/edtNomeVeiculo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtNumeroPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/lblNumeroPlaca"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distância a percorrer (km):"
+        app:layout_constraintTop_toBottomOf="@id/edtNumeroPlaca"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/lblDistancia"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblConsumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consumo médio (km/L):"
+        app:layout_constraintTop_toBottomOf="@id/edtDistancia"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtConsumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/lblConsumo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preço do combustível (R$/L):"
+        app:layout_constraintTop_toBottomOf="@id/edtConsumo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/lblPreco"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        app:layout_constraintTop_toBottomOf="@id/edtPreco"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtQuantCombustivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de combustível necessária:"
+        app:layout_constraintTop_toBottomOf="@id/botaoCalcular"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtCustoViagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custo da viagem:"
+        app:layout_constraintTop_toBottomOf="@id/txtQuantCombustivel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
